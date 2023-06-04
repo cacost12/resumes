@@ -1,0 +1,113 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=.5in]{geometry}
+\usepackage{enumitem}
+
+\setlist{nosep}
+
+\titleformat{\section}
+{\bfseries\normalsize}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[:]
+
+\titleformat{\subsubsection}[runin]
+{}
+{$\bullet$}
+{0em}
+{}
+
+\titlespacing{\subsection}
+{0em}{0em}{1em}
+
+\titlespacing{\subsubsection}
+{3em}{0em}{1em}
+
+\renewcommand{\maketitle}{
+	\begin{center}
+		{\huge\bfseries
+			\theauthor}
+			
+		404.430.1346 $\bullet$ cacost12@asu.edu $\bullet$ US Citizen $\bullet$ linkedin.com/in/colton-acosta/
+	\end{center}
+}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\begin{document}
+
+\title{Resume}
+\author{Colton Acosta}
+\maketitle
+\section{SUMMARY}
+Junior aerospace engineering student with leadership and collaborative project experience including electronics, hardware-software interfacing, computer-aided modeling, and programming. Interests include control theory, signal processing, embedded systems, and avionics. Open to relocation. 
+\section{EDUCATION}
+\textbf{B.S.E, Aerospace Engineering;} Autonomous Vehicle Systems
+\hfill 
+Graduating May 2022
+\linebreak
+Arizona State University, Tempe, AZ 
+\hfill
+4.00 GPA
+
+\section{TECHNICAL SKILLS}
+\subsection{Presentation and Organization}
+Microsoft Office,  {\LaTeX}
+\subsection{Design and Modeling}
+MATLAB/Simulink, SOLIDWORKS, LabVIEW
+\subsection{Programming} 
+Python, C/C++, Linux (git, vim, gcc)
+\section{EXPERIENCE}
+\textbf{Liquid Propulsion Avionics Lead, Sun Devil Rocketry}
+\hfill
+\vspace{0.5em}
+August 2019-Present
+\begin{itemize}
+	\item{Leading the design and development of an integrated avionics system for a liquid rocket engine with over 20 hardware components including valves, sensors, controllers, and signal processing circuitry}
+	\item{Interfacing temperature, pressure, thrust, and flow measurements with a Python graphical user interface}
+	\item{Programming Arduino controllers for prototype testing of data acquisition and flow control embedded systems}
+	\item{Built an instrumentation amplifier circuit using operational amplifiers to boost sensor outputs to measurable ranges resulting in hardware savings upwards of \$200}
+	\item{Conducting trade studies on electronic actuators and orifice flow meters to develop main propulsion system specifications using MATLAB for multivariate trade-off analyses and physical modeling}
+	\item{Documented project progress in published AIAA Propulsion and Energy conference paper}
+	\item{Wrote a development plan for the 2020-2021 academic year consisting of 42 deliverables to document project milestones, cultivate a results-oriented work environment, and delegate workloads among new talent}	
+\end{itemize}
+\section{PROJECTS}
+\textbf{Flow Control Valve Actuator Control System}\hfill Fall 2020
+\vspace{0.5em}
+\begin{itemize}
+	\item Designed and built a closed loop control system for valve actuation in flow throttling applications
+	\item Examined the relationship between pulse width modulation duty cycle and steady state shaft speed to derive a controller output signal with a linear transfer function from controller output to shaft position  
+	\item Characterized the plant transfer function with a series of step response experiments
+	\item  Designed and simulated a saturated PI controller with integrator clamping using Simulink with performance specifications of zero steady state error of step inputs and complete rejection of step disturbances.
+	\item  Built the actuator control system using a brushed DC motor, coupling shaft, Arduino controller, and quadrature rotary encoder for feedback.
+\end{itemize}
+\vspace{0.5em}
+\textbf{5280 Team Member, Sun Devil Rocketry}
+\hfill Fall 2018-Spring 2019
+\vspace{0.5em}
+\begin{itemize}
+	\item Collaborated with a group of 12 students to launch an amateur rocket to an altitude of 5280 feet
+	\item Determined build specifications, apogee altitude, and static margin with OpenRocket software
+	\item Constructed rocket with phenolic tubing wrapped with epoxied fiberglass fabric and laser-cut fins 
+	\item Adjusted final build to pragmatically mitigate static margin calculation error, allowing rocket to be launched on time
+	\item Used a microcontroller breakout board with internal altimeter for parachute deployment
+\end{itemize}
+\vspace{0.5em}
+\textbf{Orbital Mechanics Trans-lunar Injection Simulation} 
+\hfill
+Spring 2019
+\vspace{0.5em}
+\begin{itemize}
+	\item Simulated a free-return, trans-lunar injection orbital trajectory in MATLAB with an animated solution
+	\item Calculated the trajectory by solving the two-body problem using a numerical differential equation solver built from scratch with Apollo 11 low earth orbit initial conditions
+\end{itemize}
+
+\thispagestyle{empty}
+\end{document}

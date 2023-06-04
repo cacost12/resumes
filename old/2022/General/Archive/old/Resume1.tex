@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=.5in]{geometry}
+\usepackage{enumitem}
+
+\setlist{nosep}
+
+\titleformat{\section}
+{\bfseries\large}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[:]
+
+\titleformat{\subsubsection}[runin]
+{}
+{$\bullet$}
+{0em}
+{}
+
+\titlespacing{\subsection}
+{0em}{0em}{1em}
+
+\titlespacing{\subsubsection}
+{3em}{0em}{1em}
+
+\renewcommand{\maketitle}{
+	\begin{center}
+		{\huge\bfseries
+			\theauthor}
+			
+		404.430.1346 $\bullet$ cacost12@asu.edu $\bullet$ linkedin.com/in/colton-acosta/
+	\end{center}
+}
+
+\renewcommand{\baselinestretch}{1.25}
+
+\begin{document}
+
+\title{Resume}
+\author{Colton Acosta}
+\maketitle
+\section{SUMMARY}
+Junior aerospace engineering student with collaborative project experience in hardware-software interfacing, computer-aided modeling, and programming with interests in control theory and signal processing.  
+\section{EDUCATION}
+\textbf{B.S.E, Aerospace Engineering;} Autonomous Vehicle Systems
+\hfill 
+Graduating May 2022
+\linebreak
+Arizona State University, Tempe, AZ 
+\hfill
+4.00 GPA
+\linebreak
+Barrett, The Honors College
+
+\section{TECHNICAL SKILLS}
+\subsection{Design and Modeling}
+MATLAB, SOLIDWORKS, LabVIEW, Microsoft Office, GrabCAD
+\subsection{Programming} 
+Python, Arduino C/C++, Linux (git, vim, gcc), {\LaTeX}, R
+\section{EXPERIENCE}
+\textbf{Liquid Propulsion Avionics Lead, Sun Devil Rocketry}
+\hfill
+\vspace{0.5em}
+August 2019-Present
+\begin{itemize}
+	\item{Designing an avionics system for a liquid propellant engine including eight valves, ten sensors, and two controllers}
+	\item{Interfacing sensor outputs for temperature, pressure, thrust, and flow measurements with a Python GUI program}
+	\item{Built an analog signal amplifier using an integrated circuit chip to boost load cell and pressure transducer output to a readable form}
+	\item{Reported project progress in published AIAA Propulsion and Energy conference paper}
+	\item{Wrote a development plan for the 2020-2021 academic year consisting of 35 deliverables to organize future progress and delegate workloads among new members}
+\end{itemize}
+\vspace{1em}
+\textbf{5280 Team Member, Sun Devil Rocketry}
+\hfill Fall 2018-Spring 2019
+\vspace{0.5em}
+\begin{itemize}
+	\item Collaborated with a group of 12 students to launch an amateur rocket to an altitude of 5280 feet
+	\item Determined build specifications and apogee altitude with OpenRocket software
+	\item Constructed rocket with phenolic tubing wrapped with epoxied fiberglass fabric and laser-cut fins 
+	\item Used a microcontroller breakout board with an altimeter for parachute deployment
+\end{itemize}
+\section{ACADEMIC PROJECTS}
+
+\textbf{Team Lead, Airfoil Statistics Project}\hfill Spring 2020
+\vspace{0.5em}
+\begin{itemize}
+	\item Lead a group of seven students to complete a semester long project by devising a project plan, delegating workloads, setting timelines, and scheduling team meetings
+	\item Collected computational aerodynamic data with ANSYS for airflow over a wing section with configurable design specifications created with SOLIDWORKS from an airfoil parameterization
+	\item Analyzed data with an ANOVA test and computed significance-based regression models using R 
+\end{itemize}
+\vspace{0.5em}
+\textbf{Honors Student, Trans-lunar Injection Simulation} 
+\hfill
+Spring 2019
+\vspace{0.5em}
+\begin{itemize}
+	\item Simulated a free-return, trans-lunar injection orbital trajectory in MATLAB
+	\item Calculated the trajectory by solving the two-body problem using numerical differential equation solvers with Apollo 11 low earth orbit initial conditions, and animated the solution to visualize the trajectory 
+\end{itemize}
+
+\thispagestyle{empty}
+\end{document}

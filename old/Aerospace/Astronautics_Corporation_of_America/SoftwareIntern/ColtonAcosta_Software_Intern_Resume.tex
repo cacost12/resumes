@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=.5in]{geometry}
+\usepackage{enumitem}
+
+\setlist{nosep}
+
+\titleformat{\section}
+{\bfseries\normalsize}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[:]
+
+\titleformat{\subsubsection}[runin]
+{}
+{$\bullet$}
+{0em}
+{}
+
+\titlespacing{\subsection}
+{0em}{0em}{1em}
+
+\titlespacing{\subsubsection}
+{3em}{0em}{1em}
+
+\renewcommand{\maketitle}{
+	\begin{center}
+		{\huge\bfseries
+			\theauthor}
+			
+		404.430.1346 $\bullet$ cacost12@asu.edu $\bullet$ US Citizen $\bullet$ linkedin.com/in/colton-acosta/
+	\end{center}
+}
+
+\renewcommand{\baselinestretch}{1.02}
+
+\begin{document}
+
+\title{Resume}
+\author{Colton Acosta}
+\maketitle
+\section{SUMMARY}
+Junior aerospace engineering student with leadership and collaborative project experience including work in electronics, hardware-software interfacing, and programming. Interests include avionics, control theory, and signal processing. Open to relocation.
+\section{EDUCATION}
+\textbf{B.S.E, Aerospace Engineering;} Autonomous Vehicle Systems
+\hfill 
+Graduating May 2022
+\linebreak
+Arizona State University, Tempe, AZ 
+\hfill
+4.00 GPA
+
+\section{TECHNICAL SKILLS}
+\subsection{Design and Modeling}
+MATLAB/Simulink, SOLIDWORKS, Microsoft Office, LabVIEW
+\subsection{Programming} 
+Python, C, C++, Linux (git, vim, gcc, gdb)
+\subsection{Hardware}
+Soldering, Digital Multimeters, Oscilloscope, Microcontrollers, Operational Amplifiers
+\section{EXPERIENCE}
+\textbf{Liquid Propulsion Avionics Lead, Sun Devil Rocketry}
+\hfill
+\vspace{0.5em}
+August 2019-Present
+\begin{itemize}
+	\item{Leading the design and development of an avionics system for a liquid rocket engine with over 20 hardware components including valves, transducers, thermocouples, load cells, controllers, and signal processing circuitry}
+	\item{Programming AVR microcontrollers with C for prototype testing of the engine's embedded systems including data acquisition, actuation, flow control, and communications functionality}
+	\item{Interfacing temperature, pressure, thrust, and flow measurements with a Python graphical user interface}
+	\item{Wrote a C++ program to generate Gaussian noise for hardware filter testing by writing an algorithm for computing values of an inverse Gaussian cumulative distribution function}
+	\item{Wrote a C program to encode the state of the engine's valves using bit operators for efficient serial data transmission}
+	\item{Wrote, compiled, and debugged all C and C++ code using Linux command line tools such as gcc, g++, gdb, and vim}
+	\item{Built an instrumentation amplifier circuit using operational amplifiers to boost sensor outputs to measurable ranges resulting in hardware savings upwards of \$200}
+	\item{Building a central telemetry system using RS-485 electrical interfaces for long distance and noise insensitive serial communications between data acquisition, valve control, and main controllers}
+	\item{Designed and built a second order, active low-pass filter and tested the filter's noise reduction and signal reproduction by adding noise to a measured signal with a voltage summing circuit}
+	\item{Documented project progress in published AIAA Propulsion and Energy conference paper}
+	\item{Wrote a development plan for the 2020-2021 academic year consisting of 42 deliverables to document project milestones, cultivate a results-oriented work environment, and delegate workloads among new talent}
+\end{itemize}
+\section{PROJECTS}
+\textbf{Electronic Valve Actuator Flow Control System}\hfill Fall 2020
+\vspace{0.5em}
+\begin{itemize}
+	\item Designed, built, and programmed a closed loop control system for a valve actuator for use in flow throttling applications
+	\item Examined the relationship between Pulse Width Modulation duty cycle and steady state shaft speed to derive a controller output signal with a linear transfer function from controller output to shaft position  
+	\item Characterized the plant transfer function a series of step response experiments
+	\item  Designed and simulated a saturated PI controller with integrator clamping using Simulink with performance specifications of zero steady state error of step inputs and complete rejection of step disturbances.
+	\item  Built the actuator control system using a brushed DC motor, coupling shaft, Arduino controller, and quadrature rotary encoder for feedback.
+\end{itemize}
+\vspace{0.5em}
+\textbf{Orbital Mechanics Trans-lunar Injection Simulation} 
+\hfill
+Spring 2019
+\vspace{0.5em}
+\begin{itemize}
+	\item Simulated a free-return, trans-lunar injection orbital trajectory in MATLAB with an animated solution
+	\item Calculated the trajectory by solving the two-body problem using a numerical differential equation solver programmed from scratch with Apollo 11 low earth orbit initial conditions
+\end{itemize}
+
+\thispagestyle{empty}
+\end{document}

@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=.5in]{geometry}
+\usepackage{enumitem}
+
+\setlist{nosep}
+
+\titleformat{\section}
+{\bfseries\normalsize}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[:]
+
+\titleformat{\subsubsection}[runin]
+{}
+{$\bullet$}
+{0em}
+{}
+
+\titlespacing{\subsection}
+{0em}{0em}{1em}
+
+\titlespacing{\subsubsection}
+{3em}{0em}{1em}
+
+\renewcommand{\maketitle}{
+	\begin{center}
+		{\huge\bfseries
+			\theauthor}
+			
+		404.430.1346 $\bullet$ cacost12@asu.edu $\bullet$ US Citizen $\bullet$ linkedin.com/in/colton-acosta/
+	\end{center}
+}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\begin{document}
+
+\title{Resume}
+\author{Colton Acosta}
+\maketitle
+\section{SUMMARY}
+Junior electrical engineering student with leadership and collaborative project  experience including work in embedded software, programming, PCB design and fabrication, electronics, and project management. Interests include controls, signal processing, and embedded systems. Open to relocation.
+\section{EDUCATION}
+\textbf{B.S.E, Electrical Engineering}
+\hfill 
+Graduating May 2023
+\linebreak
+Arizona State University, Tempe, AZ 
+\hfill
+4.00 GPA
+
+\section{TECHNICAL SKILLS}
+\subsection{Design and Modeling}
+MATLAB/Simulink, LTspice, KiCAD, Diptrace, SOLIDWORKS, Microsoft Office
+\subsection{Hardware}
+Microcontrollers, Soldering, Multimeters, Oscilloscopes, Function Generators, Electronic Loads
+\subsection{Programming} 
+C, C++, Python, Linux, Git, Make, ARM Embedded Toolchain, Assembly
+\section{EXPERIENCE}
+\textbf{Pyramid Technologies, Inc, Mesa, AZ: Electrical Engineering Intern}
+\hfill 
+\vspace{0.5em}
+May 2021-August 2021
+\begin{itemize}
+\item{Evaluated bill validation errors of a bill acceptor in firmware using an in-circuit debugger with the calibration source code, written in coldfire assembly.}
+\item{Conducted phototransistor data collection and analysis with over 150 LEDs to find a viable replacement bill validation LED that would work at scale production with minimal firmware modifications}
+\item{Designed a revised bill acceptor software development board by adding an electronic fuse to alleviate faulty supply/loading conditions and provide power supply fault indication}
+\item{Designed a revised USB to MDB serial converter PCB by adding serial indication LEDs, signal buffering, inrush current protection, and short circuit protection to the original design}
+\item{Wrote Python scripts to calculate external component design values from input specifications and datasheet guidelines}
+\end{itemize}
+\vspace{0.5em}
+\textbf{Sun Devil Rocketry: President and Avionics Team Founder}
+\hfill
+\vspace{0.5em}
+January 2021-Present
+\begin{itemize}
+\item{Managed a technical engineering student organization with over 100 members by overseeing engineering projects, organizing events and meetings, writing budgeting plans, mentoring, and maintaining industry/university relations}
+\item{Founded an avionics team to teach members electrical and software engineering skills through hands-on projects}
+	\item{Designing an avionics system for a liquid rocket engine to manage all engine hardware including including valves, transducers, thermocouples, load cells, motor drivers, wireless transceivers, and signal processing circuitry}
+\item{Designed an embedded engine controller PCB including a 32-bit ARM Cortex-M7 microcontroller, a switching power supply, an external flash and SD card data logger, an analog sensor signal amplifier, and an ignition system}
+	\item{Programming the engine controller with C for software control of the engine's data acquisition, actuation, flow control, and communications functionality}
+	\item{Wrote a C program to encode the state of the engine's valves using bit operators for efficient serial data transmission}
+	\item{Interfacing temperature, pressure, thrust, and flow measurements with a Python graphical user interface}
+	\item{Wrote, compiled, and debugged all C/C++ code using Linux command line tools such as gcc, g++, gdb, and make}
+\end{itemize}
+\section{PROJECTS}
+\vspace{0.5em}
+\textbf{Flow Control Valve Actuator Control System}\hfill Fall 2020
+\vspace{0.5em}
+\begin{itemize}
+	\item Designed and built a closed loop control system for a valve actuator for use in flow throttling applications
+	\item Examined the relationship between Pulse Width Modulation duty cycle and steady state shaft speed to derive a controller output signal with a linear transfer function from controller output to shaft position  
+	\item Characterized the plant transfer function with a series of step response experiments
+	\item  Implemented a saturated PI controller with integrator clamping in C++, and simulated the performance using Simulink to meet specifications of zero steady state error of step inputs and complete rejection of step disturbances.
+	\item  Built the actuator control system using a brushed DC motor, coupling shaft, Arduino controller, and quadrature rotary encoder for feedback.
+\end{itemize}
+\vspace{0.5em}
+\thispagestyle{empty}
+\end{document}

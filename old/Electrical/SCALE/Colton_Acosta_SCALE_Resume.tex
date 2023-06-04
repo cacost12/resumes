@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=.5in]{geometry}
+\usepackage{enumitem}
+
+\setlist{nosep}
+
+\titleformat{\section}
+{\bfseries\normalsize}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[:]
+
+\titleformat{\subsubsection}[runin]
+{}
+{$\bullet$}
+{0em}
+{}
+
+\titlespacing{\subsection}
+{0em}{0em}{1em}
+
+\titlespacing{\subsubsection}
+{3em}{0em}{1em}
+
+\renewcommand{\maketitle}{
+	\begin{center}
+		{\huge\bfseries
+			\theauthor}
+			
+		404.430.1346 $\bullet$ cacost12@asu.edu $\bullet$ US Citizen $\bullet$ linkedin.com/in/colton-acosta/
+	\end{center}
+}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\begin{document}
+
+\title{Resume}
+\author{Colton Acosta}
+\maketitle
+\section{SUMMARY}
+Junior electrical engineering student with leadership and professional experience including work in PCB schematic and layout design, analog and digital electronics, embedded software, programming, and project management. Interests include avionics, control theory, signal processing, and embedded systems. 
+\section{EDUCATION}
+\textbf{B.S.E, Electrical Engineering}
+\hfill 
+Graduating May 2023
+\linebreak
+Arizona State University, Tempe, AZ 
+\hfill
+4.00 GPA
+
+\section{TECHNICAL SKILLS}
+\subsection{Design and Modeling}
+LTspice, KiCAD, DipTrace, \LaTeX, MATLAB/Simulink, Microsoft Office
+\subsection{Hardware}
+Microcontrollers, Soldering (SMT), Multimeters, Oscilloscopes, Function Generators, Electronic Loads
+\subsection{Programming} 
+C, C++, Python, GCC Assembler, Linux, Git, Make, ARM Cortex-M 
+\section{EXPERIENCE}
+\textbf{Pyramid Technologies, Inc, Mesa, AZ: Electrical Engineering Intern}
+\hfill 
+\vspace{0.5em}
+May 2021-August 2021
+\begin{itemize}
+\item{Evaluated bill validation errors of a Pyramid bill acceptor in firmware using an in-circuit debugger with the calibration source code, written in coldfire     assembly.}
+\item{Revised a switching power supply and serial opto-isolator PCB to be used in several bill acceptor designs}
+\item{Conducted testing and qualification of replacement optocouplers including measurements of logic low voltage and slew rate for ambient temperatures ranging from 0 to 60$^{\circ}$C}
+\item{Designed a test fixture IO protection PCB to protect test fixture pins from overvoltage and overcurrent conditions using schottky diodes and a PTC resettable fuse}
+\item{Designed a revised USB to MDB serial converter PCB by adding serial indication LEDs, signal buffering, inrush current protection, and short circuit protection to the original design}
+\item{Designed a revised bill acceptor software development board by adding an electronic fuse to alleviate faulty supply/loading conditions and provide power supply fault indication}
+\item{Resolved electrical issues with dysfunctional test fixtures and equipment used by engineers and production staff}
+\item{Wrote Python scripts to calculate external component design values from input specifications and datasheet guidelines}
+\end{itemize}
+\vspace{1em}
+\textbf{Sun Devil Rocketry: President and Avionics Team Founder}
+\hfill
+\vspace{0.5em}
+August 2019-Present
+\begin{itemize}
+\item{Managed a technical student organization with over 50 members by overseeing engineering projects, organizing events and meetings, writing budgeting plans, mentoring, and maintaining industry/university relations}
+\item{Founded an avionics team to teach members electrical and software engineering skills through hands-on projects}
+	\item{Designing an avionics system for a liquid rocket engine to manage all engine hardware including valves, transducers, thermocouples, load cells, motor drivers, wireless transceivers, and signal processing circuitry}
+	\item{Documented progress on the liquid engine project in a published AIAA Propulsion and Energy conference paper}
+	\item{Programming a Python user interface for real-time visualization of temperature, pressure, thrust, and flow measurements}
+	\item{Designing an instrumentation amplifier PCB with digitally programmable gain to boost available sensor outputs to measurable ranges in order to save upwards of 10\% of club funding in new sensor costs}
+\item{Designed a liquid engine controller PCB including an ARM Cortex-M7 microcontroller, a switching power supply, an external flash and SD card data logger, and an ignition system}
+	\item{Designed and built a second order, active low-pass filter and tested the filter's noise reduction and signal reproduction by adding noise to a measured signal with a voltage summing circuit}
+\item{Designed a valve controller PCB to control AC powered solenoids and stepper motors using an ARM Cortex-M4 microcontroller with solid state relays, an optically-isolated AC supply monitoring circuit, and calibration sensor inputs}
+	\item{Designed an optoelectronic photogate PCB to calibrate the absolute shaft positions of stepper motors upon controller startup}
+	\item{Programming ARM Cortex microcontrollers with C and assembly for low level software control of data acquisition, actuation, flow control, and communications hardware}
+	\item{Wrote a C program to encode engine valve states using bitwise logical operators for efficient serial transmission}
+\end{itemize}
+\thispagestyle{empty}
+\end{document}

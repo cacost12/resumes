@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=1.25in]{geometry}
+
+\titleformat{\section}
+{\huge\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}
+{\bfseries\Large}
+{\hspace{-.25in}$\bullet$}
+{0em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[---]
+
+\titlespacing{\subsubsection}
+{0em}{.25em}{1em}
+
+\renewcommand{\maketitle}{
+\begin{center}
+	{\huge\bfseries	
+	\theauthor}
+
+\vspace{.25em}
+
+cacost12@asu.edu --- http://ColtonAcosta.com
+\end{center}
+
+\
+}
+
+\begin{document}
+\title{Resume}
+\author{Colton Acosta}
+\maketitle
+\section{Technical Skills}
+\subsection{Work Flow}
+vim, tmux or a tiling window manager. For networked devices, ssh and either git, rsync or syncthing depending on the need
+\subsection{Languages}
+\subsubsection{Programming}
+C, C++, Lisp
+\subsubsection{Scripting}
+Python, Perl, shell, R, Praat
+\subsubsection{Markup}
+{\LaTeX}, HTML, CSS
+\subsection{Multimedia}
+\subsubsection{Image}
+Most adept volleying between GIMP and imagemagick
+\subsubsection{Video}
+I use blender for video sequencing and FFmpeg for basic operations and screen-casting.
+\subsubsection{Audio}
+FFmpeg or Audacity for basic manipulation. Praat for more advanced or academic purposes. Also familiar with music production software like LMMS.
+\section{General Skills}
+\subsection{Languages}
+\subsubsection{Can Speak} 
+Spanish, Chinese, Latin, some French
+\subsubsection{Can Read}
+Most Romance Languages, Greek
+\section{Job Experience}
+\subsection{University of Arizona}
+\subsubsection{Teaching Assistant} LING300 (Introduction to Syntax), LING150 (Language)
+\subsection{University of Georgia}
+\subsubsection{Instructor} LING2100 (Introduction to Linguistics)
+\subsubsection{Teaching Assistant} LING3150 (Generative Syntax)
+
+\end{document}

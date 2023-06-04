@@ -1,0 +1,131 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=.5in]{geometry}
+\usepackage{enumitem}
+
+\setlist{nosep}
+
+\titleformat{\section}
+{\bfseries\normalsize}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[:]
+
+\titleformat{\subsubsection}[runin]
+{}
+{$\bullet$}
+{0em}
+{}
+
+\titlespacing{\subsection}
+{0em}{0em}{1em}
+
+\titlespacing{\subsubsection}
+{3em}{0em}{1em}
+
+\renewcommand{\maketitle}{
+	\begin{center}
+		{\huge\bfseries
+			\theauthor}
+			
+		404.430.1346 $\bullet$ cacost12@asu.edu $\bullet$ US Citizen $\bullet$ linkedin.com/in/colton-acosta/ $\bullet$ coltonacosta.com
+	\end{center}
+}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\begin{document}
+
+\title{Resume}
+\author{Colton Acosta}
+\maketitle
+\section{EDUCATION}
+\textbf{B.S.E, Electrical Engineering}
+\hfill 
+Graduating May 2023
+\linebreak
+Arizona State University, Tempe, AZ 
+\hfill
+4.00 GPA
+
+\section{TECHNICAL SKILLS}
+\subsection{Software} 
+C, C++, Python, Assembly, Linux, Git, Make, ARM, Visual Studio
+\subsection{Hardware}
+Verilog, Microcontrollers, FPGA, Soldering (SMD), Multimeters, Oscilloscopes, Function Generators 
+\subsection{Design/Modeling}
+LTspice, KiCAD, DipTrace, MATLAB/Simulink, Cadence 
+\section{PROFESSIONAL EXPERIENCE}
+\textbf{Garmin Aviation: Embedded Software Engineering Intern}
+\hfill
+\vspace{0.5em}
+May 2022--August 2022
+\begin{itemize}
+\item{Developed certification software for a new Vulkan graphics driver to be used in safety-critical avionics systems}
+\item{Wrote unit tests with randomized test vectors in C to test the GPU driver source code with maximal coverage}
+\item{Debugged compiler errors of ARM and Windows builds using Visual Studio and MSBuild XML schemas}
+\item{Resolved runtime errors caused by randomized test vectors by analyzing the source code functions and manually setting up data structures, pointers, arrays, and buffers}
+\end{itemize}
+\vspace{1em}
+\textbf{Sun Devil Rocketry: President and Avionics Team Founder}
+\hfill
+\vspace{0.5em}
+August 2021--May 2022
+\begin{itemize}
+\item{Oversaw all activities of a technical student organization with three rocket propulsion teams, two amateur rocketry teams, a K-12 outreach program, and over 50 members   }
+\item{Facilitated all project development by holding meetings and design reviews, writing budget proposals, organizing launch logistics, mentoring, and maintaining industry/university relations}
+\item{Founded a new avionics team to design the club's first flight computer and promote the development of electrical and software engineering skills among students interested in the aerospace industry}
+\vspace{1em}
+\end{itemize}
+\textbf{Pyramid Technologies, Inc, Mesa, AZ: Electrical Engineering Intern}
+\hfill 
+\vspace{0.5em}
+May 2021--August 2021
+\begin{itemize}
+\item{Evaluated bill validation errors of a bill acceptor's firmware using an in-circuit debugger and assembly source code}
+\item{Qualified new optocouplers by measuring logic levels and slew rate for ambient temperatures ranging from 0 to 60$^{\circ}$C}
+\item{Wrote Python scripts to calculate external component design values from input specifications and datasheet guidelines}
+\end{itemize}
+\section{PROJECTS}
+\textbf{Sun Devil Rocketry: Flight Computer}
+\hfill
+\vspace{0.5em}
+January 2021--Present
+\begin{itemize}
+\item{Developing a flight computer for high-powered rockets to implement recovery, control, and telemetry functionality}
+\item{Equipped the embedded computer with an ARM Cortex-M7 microcontroller, a 9-axis IMU, GPS, a LoRa wireless module, a micro SD card, external flash, and a USB interface}
+\item{Programming the computer with C for low level control of the microcontroller's UART, I2C, SPI, and GPIO peripherals}
+\end{itemize}
+\vspace{1em}
+\textbf{Sun Devil Rocketry: Engine Controller}
+\hfill
+\vspace{0.5em}
+August 2019--Present
+\begin{itemize}
+\item{Developing a controller for a liquid rocket engine to manage engine hardware and automate ignition sequencing}
+\item{Designed the PCB using an ARM Cortex-M7 microcontroller, a switching power supply, external flash, an SD card, ignition circuitry, sensor peripherals, a USB interface, and a wireless command and control interface}
+\item{Developed ignition and data-logging APIs in C to abstract low-level hardware control functionality}
+\item{Programmed a Python interface for real-time visualization of temperature, pressure, thrust, and flow measurements}
+\end{itemize}
+\vspace{1em}
+\textbf{Sun Devil Rocketry: Valve Controller}
+\hfill
+\vspace{0.5em}
+Spring 2022
+\begin{itemize}
+\item{Designed, built, and tested a controller to actuate rocket engine valves using an ARM Cortex-M7 microcontroller, solid state relays, a pulse interface, and motor sensors.}
+\item{Programmed the controller in C to process valve actuation commands from the main engine controller}
+\item{Developed a solenoid control API in C to implement basic solenoid actuation functions to simplify the application code}
+\item{Calibrated valve shaft initial positions using an optoelectronic photogate sensor with customized form factor}
+\item{Designed an optically-isolated voltage monitoring circuit to alert the controller when solenoid power is lost}
+\end{itemize}
+\thispagestyle{empty}
+\thispagestyle{empty}
+\end{document}

@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=.5in]{geometry}
+\usepackage{enumitem}
+
+\setlist{nosep}
+
+\titleformat{\section}
+{\bfseries\normalsize}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[:]
+
+\titleformat{\subsubsection}[runin]
+{}
+{$\bullet$}
+{0em}
+{}
+
+\titlespacing{\subsection}
+{0em}{0em}{1em}
+
+\titlespacing{\subsubsection}
+{1em}{0em}{1em}
+
+\renewcommand{\maketitle}{
+	\begin{center}
+		{\huge\bfseries
+			\theauthor}
+			
+		404.430.1346 $\bullet$ cacost12@asu.edu $\bullet$ US Citizen $\bullet$ linkedin.com/in/colton-acosta/
+	\end{center}
+}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\begin{document}
+
+\title{Resume}
+\author{Colton Acosta}
+\maketitle
+\section{SUMMARY}
+Junior electrical engineering student with leadership and professional experience including work in PCB design and fabrication, analog and digital electronics, embedded software, programming, and project management. Open to relocation.
+\section{EDUCATION}
+\textbf{B.S.E, Electrical Engineering}
+\hfill 
+Graduating May 2023
+\linebreak
+Arizona State University, Tempe, AZ 
+\hfill
+4.00 GPA
+
+\section{TECHNICAL SKILLS}
+\subsection{Design and Modeling}
+MATLAB/Simulink, LTspice, KiCAD, DipTrace, SOLIDWORKS, Microsoft Office
+\subsection{Hardware}
+Microcontrollers, Soldering, Digital Multimeters, Oscilloscopes, Function Generators
+\subsection{Programming} 
+C, C++, Python, Linux, Git, ARM Embedded Toolchain, MIPS Assembly
+\section{EXPERIENCE}
+\textbf{Pyramid Technologies, Inc, Mesa, AZ: Electrical Engineering Intern}
+\hfill 
+\vspace{0.5em}
+May 2021-August 2021
+\begin{itemize}
+\item{Revised a serial opto-isolator PCB for bill acceptors, resulting in improved digital specifications and MDB compliance}
+\item{Conducted testing and qualification of replacement optocouplers including logic low voltage and slew rate measurements for over 50 samples and ambient temperatures ranging from 0 to 60$^{\circ}$C}
+\item{Designed a test fixture IO protection PCB to protect test fixture pins from overvoltage and overcurrent conditions using schottky diodes and a PTC resettable fuse}
+\item{Designed a new revision of a USB to MDB serial converter PCB by adding serial indication LEDs, signal buffering, inrush current protection, and short circuit protection to the original design}
+\item{Revised an embedded software development board for Pyramid bill acceptors by adding an electronic fuse to alleviate faulty supply/loading conditions and provide power supply fault indication}
+\end{itemize}
+\vspace{0.5em}
+\textbf{Sun Devil Rocketry: Liquid Propulsion Team Lead}
+\hfill
+\vspace{0.5em}
+August 2019-Present
+\begin{itemize}
+\item{Leading a multidisciplinary team of over ten students to design and develop a liquid bipropellant rocket engine}
+	\item{Designing an avionics system to monitor and manage all engine hardware including including valves, transducers, thermocouples, load cells, motor drivers, transceivers, and signal processing circuitry}
+\item{Designed an embedded engine controller PCB including an ARM Cortex-M4 microcontroller, a switching power supply, an embedded flash memory/micro SD card data logger, and GPIO connectors}
+	\item{Interfacing temperature, pressure, thrust, and flow measurements with a Python graphical user interface}
+	\item{Programming engine microcontrollers with C for software control of engine data acquisition and actuation}
+	\item{Designing an instrumentation amplifier PCB with digitally programmable gain to boost sensor outputs to measurable ranges in order to save upwards of 10\% of overall club funding in sensor costs}
+	\item{Designed and built a second order, active low-pass filter and tested the filter's noise reduction and signal reproduction by adding noise to a measured signal with a voltage summing circuit}
+\item{Designing an actuation interface for the engine's AC powered flow control solenoids using solid state relays}
+	\item{Documented project progress in published AIAA Propulsion and Energy conference paper}
+\end{itemize}
+\section{PROJECTS}
+\vspace{0.5em}
+\textbf{Flow Control Valve Actuator Control System}\hfill Fall 2020
+\vspace{0.5em}
+\begin{itemize}
+	\item {Designed and built a closed loop control system for a valve actuator for use in flow throttling applications}
+	\item {Examined the relationship between Pulse Width Modulation duty cycle and steady state shaft speed to derive a controller output signal with a linear transfer function from controller output to shaft position} 
+	\item {Characterized the plant transfer function with a series of step response experiments}
+ \item  {Implemented a saturated PI controller with integrator clamping in C++, and simulated the performance using Simulink to meet specifications of zero steady state error of step inputs and complete rejection of step disturbances}
+	\item  {Built the actuator control system using a brushed DC motor, coupling shaft, Arduino controller, and a quadrature rotary encoder for feedback}
+\end{itemize}
+\vspace{0.5em}
+
+\thispagestyle{empty}
+\end{document}

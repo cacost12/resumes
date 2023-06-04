@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=.5in]{geometry}
+\usepackage{enumitem}
+
+\setlist{nosep}
+
+\titleformat{\section}
+{\bfseries\large}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[:]
+
+\titleformat{\subsubsection}[runin]
+{}
+{$\bullet$}
+{0em}
+{}
+
+\titlespacing{\subsection}
+{0em}{0em}{1em}
+
+\titlespacing{\subsubsection}
+{3em}{0em}{1em}
+
+\renewcommand{\maketitle}{
+	\begin{center}
+		{\huge\bfseries
+			\theauthor}
+			
+		404.430.1346 $\bullet$ cacost12@asu.edu $\bullet$ linkedin.com/in/colton-acosta-03b394188/
+	\end{center}
+}
+
+\renewcommand{\baselinestretch}{1.25}
+
+\begin{document}
+
+\title{Resume}
+\author{Colton Acosta}
+\maketitle
+\section{SUMMARY}
+Junior BSE in Aerospace Engineering with Astronautics concentration looking for a Systems Engineering internship position at Lockheed Martin in the summer of 2021.
+\section{EDUCATION}
+\textbf{B.S.E, Aerospace Engineering;} Astronautics
+\hfill 
+Graduating May 2022
+\linebreak
+Barrett Honors College, Arizona State University, Tempe, Arizona 
+\hfill
+4.0 GPA
+\section{TECHNICAL SKILLS}
+\subsection{Engineering Software}
+SOLIDWORKS, GrabCAD, Fusion 360, OpenRocket 
+\subsection{Programming} 
+MATLAB, Arduino, Python, Linux (git, vim, gcc), Latex
+\section{EXTRACURRICULAR PROJECTS}
+\textbf{Liquid Propulsion Avionics Engineer, Sun Devil Rocketry}
+\hfill
+\vspace{0.5em}
+August 2019-Present
+\begin{itemize}
+	\item{Designing an avionics system for a liquid propellant engine including eight valves, ten sensors, and two controllers}
+	\item{Interfacing sensor outputs for temperature, pressure, thrust, and flow measurements with a Python GUI program}
+	\item{Built an analog signal amplifier using an integrated circuit chip to boost load cell and pressure transducer output to a readable form}
+	\item{Summarized project progress in AIAA conference paper}
+	\item{Wrote a 2020-2021 development plan consisting of 35 deliverables to organize future progress and delegate workloads among new members}
+\end{itemize}
+\vspace{1em}
+\textbf{5280 Team Member, Sun Devil Rocketry}
+\hfill Fall 2018-Spring 2019
+\vspace{0.5em}
+\begin{itemize}
+	\item Collaborated with a group of 12 students to launch an amateur rocket to an altitude of 4300 feet
+	\item Determined build specifications and apogee altitude with OpenRocket software
+	\item Constructed rocket with phenolic tubing wrapped with epoxied fiberglass fabric and laser-cut fins 
+	\item Used a microcontroller with an internal altimeter for parachute deployment
+\end{itemize}
+\section{ACADEMIC PROJECTS}
+\textbf{Barrett Honors Student, Trans-lunar Injection Simulation} 
+\hfill
+January 2019-May 2019
+\vspace{0.5em}
+\begin{itemize}
+	\item Simulated a free-return, trans-lunar injection orbital trajectory in MATLAB
+	\item Calculated the trajectory by solving the two-body problem using numerical differential equation solvers with Apollo 11 low earth orbit initial conditions
+	\item Animated solution to visualize the trajectory
+\end{itemize}
+\vspace{1em}
+\textbf{ProMod Team Member, ProMod Aircraft Design Project, ASU}
+\hfill 
+Fall 2018-December 2018
+\vspace{0.5em}
+\begin{itemize}
+	\item Collaborated in a team of four to build prototype models for a theoretical aircraft
+	\item Built a scale model of an aircraft interior, laser cut an airfoil cross-section, and wrote two Arduino programs to demonstrate the design concept of the aircraft's automated systems
+	\item Advertised and presented project results with a promotional poster and video
+\end{itemize}
+\thispagestyle{empty}
+\end{document}
