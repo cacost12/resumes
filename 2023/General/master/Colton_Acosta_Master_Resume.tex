@@ -122,23 +122,29 @@ May 2021--August 2021
 \vspace{0.5em}
 January 2021--Present
 \begin{itemize}
-\item{Developing a flight computer for high-powered rockets to implement recovery, control, and telemetry functionality}
-\item{Equipped the embedded computer with an ARM Cortex-M7 microcontroller, a 9-axis IMU, GPS, a LoRa wireless module, a micro SD card, external flash, and a USB interface}
-\item{Programmed the computer with C for low level control of the microcontroller's UART, I2C, SPI, and GPIO peripherals}
-\item{Developed APIs for accessing IMU and barometric pressure sensor data from application code}
-\item{Wrote a data-logger application to collect real flight data for testing, and successfully recovered flight data from a Sun Devil Rocketry high power launch}
+\item{Developed a flight computer to log flight data and implement parachute recovery in amateur and high power rockets}
+\item{Equipped the computer with an ARM Cortex-M4 microcontroller, a barometric pressure sensor, external flash, and a USB interface}
+\item{Created three PCB layouts to separately optimize for cost, size, and test by using different design rules (DRC) }
+\item{Wrote APIs in C for low level control of external hardware using UART, I2C, SPI, and GPIO}
+\item{Wrote a data-logger application to collect flight data, and successfully recovered flight data from several launches}
+\item{Implemented the recovery software using a state machine architecture to transition between programming, idle, in-flight, and post-flight states}
+\item{Implemented apogee detection, main parachute altitude detection, and landing detection algorithms using a FIFO buffer, Z-transforms, and tuned thresholds}
+\item{Tested the recovery software using a vacuum chamber to simulate the pressure loss that occurs during ascent}
 \end{itemize}
 \vspace{1em}
-\textbf{Sun Devil Rocketry: Engine Controller}
+\textbf{Sun Devil Rocketry: Liquid Rocket Engine Controller}
 \hfill
 \vspace{0.5em}
 August 2019--Present
 \begin{itemize}
-\item{Developing a controller for a liquid rocket engine to manage engine hardware and automate ignition sequencing}
-\item{Designed the PCB using an ARM Cortex-M7 microcontroller, a switching power supply, external flash, an SD card, ignition terminals, sensor peripherals, a USB interface, and a wireless command and control interface}
+\item{Architected an avionics system which successfully supported ASU's first static hotfire attempt of a liquid rocket engine}
+\item{Designed and built an engine controller for to manage engine hardware and communicate with the ground station}
+\item{Designed the PCB using an ARM Cortex-M7 microcontroller, a switching power supply, external flash, an SD card, ignition terminals, sensor peripherals, a USB interface, and an RS485 command and control interface}
 \item{Developed ignition and data-logging APIs in C to abstract low-level hardware control functionality}
-\item{Programmed a Python interface for real-time visualization of temperature, pressure, thrust, and flow measurements}
+\item{Programmed a Python interface for real-time visualization of engine state and sensor measurements}
 \item{Amplified pressure transducer differential outputs to measurable ranges using a programmable amplifier circuit in order to save upwards of 10\% of club funding in new sensor costs}
+\item{Wrote sequencing code in C to open/close engine values in a timed order to automate a static hotfire test }
+\item{Wrote an interrupt driven command processor to communicate with the remote ground station over ethernet}
 \end{itemize}
 \vspace{1em}
 \textbf{Sun Devil Rocketry: Valve Controller}
@@ -150,7 +156,7 @@ Spring 2022
 \item{Calibrated valve shaft initial positions using an optoelectronic photogate sensor with customized form factor}
 \item{Designed an optically-isolated voltage monitoring circuit to alert the controller when solenoid power is lost}
 \item{Programmed the controller in C to process valve actuation commands from the main engine controller}
-\item{Developed a solenoid control API in C to implement basic solenoid actuation functions to simplify the application code}
+\item{Developed a valve control API in C to implement basic valve actuation functions for solenoids and servo valves}
 \end{itemize}
 \vspace{1em}
 \textbf{Flow Control Valve Actuator Control System}\hfill Fall 2020
