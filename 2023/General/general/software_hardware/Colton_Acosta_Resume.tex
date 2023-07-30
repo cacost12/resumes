@@ -56,24 +56,13 @@ Arizona State University, Tempe, AZ
 4.00 GPA
 
 \section{TECHNICAL SKILLS}
-\subsection{Software} 
-C, C++, Python, Assembly, Linux, Git, Make, ARM, Visual Studio 
 \subsection{Hardware}
 Verilog, Microcontrollers, FPGA, Soldering (SMD), Multimeters, Oscilloscopes, Function Generators 
+\subsection{Software} 
+C, C++, Python, Assembly, Linux, Git, Make, ARM, Visual Studio 
 \subsection{Design/Modeling}
 LTspice, KiCAD, DipTrace, MATLAB/Simulink, Cadence, SolidWorks
 \section{EXPERIENCE}
-\textbf{Undergraduate Research Assistant: Advanced CMOS}
-\hfill
-\vspace{0.5em}
-January 2022--April 2023
-\begin{itemize}
-\item{Assisted in the data collection of a 90nm CMOS process in adverse environments for use in satellite imaging systems}
-\item{Designed over ten PCBs for mounting test devices and interfacing with a semiconductor parameter analyser}
-\item{Constructed a CMOS measurement setup rated for cryogenic temperatures to emulate temperature conditions in space}
-\item{Designed and simulated a transimpedance amplifier to amplify CMOS drain currents and filter high frequency noise}
-\end{itemize}
-\vspace{1em}
 \textbf{Garmin Aviation: Embedded Software Engineering Intern}
 \hfill
 \vspace{0.5em}
@@ -95,27 +84,6 @@ August 2021--May 2022
 \item{Founded a new avionics team to design the club's first flight computer and promote the development of electrical and software engineering skills among students interested in the aerospace industry}
 \vspace{1em}
 \end{itemize}
-\textbf{Pyramid Technologies, Inc, Mesa, AZ: Electrical Engineering Intern}
-\hfill 
-\vspace{0.5em}
-May 2021--August 2021
-\begin{itemize}
-\item{Evaluated bill validation errors of a bill acceptor's firmware using an in-circuit debugger and assembly source code}
-\item{Revised a switching power supply and serial opto-isolator PCB to be usable with multiple bill acceptors}
-\item{Qualified new optocouplers by measuring logic levels and slew rate for ambient temperatures ranging from 0 to 60$^{\circ}$C}
-\item{Designed a new PCB to protect test fixture pins from overvoltage and overcurrent conditions
-	using schottky diodes and a PTC resettable fuse}
-\item{Collected and analyzed phototransistor data on over 150 LEDs to find a viable bill validation
-	LED that would work at scale production without firmware modifications}
-\item{Added serial indication LEDs, signal buffering, inrush current protection, and short circuit protection to a USB to MDB serial interface PCB}
-\item{Designed a revised bill acceptor software development board by adding an electronic fuse to alleviate faulty sup-
-	ply/loading conditions and provide power supply fault indication}
-\item{Performed DC load testing on a new 120V AC power supply to measure power trace voltage drops at full load}
-\item{Conducted electrical tests and wrote qualification documents for replacement PCB parts to resolve procurement issues}
-\item{Tracked project progress and managed feedback on PCB designs and layouts with git and bitbucket}
-\item{Resolved electrical issues with dysfunctional test fixtures and equipment used by engineers and production staff}
-\item{Wrote Python scripts to calculate external component design values from input specifications and datasheet guidelines}
-\end{itemize}
 \section{PROJECTS}
 \textbf{Sun Devil Rocketry: Flight Computer}
 \hfill
@@ -124,12 +92,9 @@ January 2021--Present
 \begin{itemize}
 \item{Developed a flight computer to log flight data and implement parachute recovery in amateur and high power rockets}
 \item{Equipped the computer with an ARM Cortex-M4 microcontroller, a barometric pressure sensor, external flash, and a USB interface}
-\item{Created three PCB layouts to separately optimize for cost, size, and test by using different design rules (DRC) }
 \item{Wrote APIs in C for low level control of external hardware using UART, I2C, SPI, and GPIO}
-\item{Wrote a data-logger application to collect flight data, and successfully recovered flight data from several launches}
 \item{Implemented the recovery software using a state machine architecture to transition between programming, idle, in-flight, and post-flight states}
 \item{Implemented apogee detection, main parachute altitude detection, and landing detection algorithms using a FIFO buffer, Z-transforms, and tuned thresholds}
-\item{Tested the recovery software using a vacuum chamber to simulate the pressure loss that occurs during ascent}
 \end{itemize}
 \vspace{1em}
 \textbf{Sun Devil Rocketry: Liquid Rocket Engine Controller}
@@ -140,9 +105,7 @@ August 2019--May 2023
 \item{Architected an avionics system which successfully supported ASU's first static hotfire attempt of a liquid rocket engine}
 \item{Designed and built an engine controller for to manage engine hardware and communicate with the ground station}
 \item{Designed the PCB using an ARM Cortex-M7 microcontroller, a switching power supply, external flash, an SD card, ignition terminals, sensor peripherals, a USB interface, and an RS485 command and control interface}
-\item{Developed ignition and data-logging APIs in C to abstract low-level hardware control functionality}
 \item{Programmed a Python interface for real-time visualization of engine state and sensor measurements}
-\item{Amplified pressure transducer differential outputs to measurable ranges using a programmable amplifier circuit in order to save upwards of 10\% of club funding in new sensor costs}
 \item{Wrote sequencing code in C to open/close engine values in a timed order to automate a static hotfire test }
 \item{Wrote an interrupt driven command processor to communicate with the remote ground station over ethernet}
 \end{itemize}
@@ -154,21 +117,8 @@ Spring 2022
 \begin{itemize}
 \item{Designed, built, and tested a controller to actuate rocket engine valves using an ARM Cortex-M7 microcontroller, solid state relays, a pulse interface, and motor sensors.}
 \item{Calibrated valve shaft initial positions using an optoelectronic photogate sensor with customized form factor}
-\item{Designed an optically-isolated voltage monitoring circuit to alert the controller when solenoid power is lost}
-\item{Programmed the controller in C to process valve actuation commands from the main engine controller}
 \item{Developed a valve control API in C to implement basic valve actuation functions for solenoids and servo valves}
 \end{itemize}
-\vspace{1em}
-\textbf{Flow Control Valve Actuator Control System}\hfill Fall 2020
 \vspace{0.5em}
-\begin{itemize}
-	\item Designed and built a closed loop control system for a valve actuator for use in flow throttling applications
-	\item Examined the relationship between Pulse Width Modulation duty cycle and steady state shaft speed to derive a controller output signal with a linear transfer function from controller output to shaft position  
-	\item Characterized the plant transfer function with a series of step response experiments
-	\item  Implemented a saturated PI controller with integrator clamping in C++, and simulated the performance using Simulink to meet specifications of zero steady state error of step inputs and complete rejection of step disturbances
-	\item  Built the actuator using a brushed DC motor, coupling shaft, Arduino, and quadrature rotary encoder for feedback
-\end{itemize}
-\vspace{0.5em}
-\thispagestyle{empty}
 \thispagestyle{empty}
 \end{document}
