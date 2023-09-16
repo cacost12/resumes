@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.8.26)  16 SEP 2023 15:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.8.2)  7 AUG 2023 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Colton_Acosta_Master_Resume.tex
-(./Colton_Acosta_Master_Resume.tex
+**Colton_Acosta_Electrical_Resume.tex
+(./Colton_Acosta_Electrical_Resume.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -81,8 +81,8 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count198
 \l__pdf_internal_box=\box53
 )
-(./Colton_Acosta_Master_Resume.aux)
-\openout1 = `Colton_Acosta_Master_Resume.aux'.
+No file Colton_Acosta_Electrical_Resume.aux.
+\openout1 = `Colton_Acosta_Electrical_Resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
@@ -98,7 +98,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -140,25 +139,25 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
-/enc/dvips/cm-super/cm-super-ts1.enc}] [2] (./Colton_Acosta_Master_Resume.aux) 
+/enc/dvips/cm-super/cm-super-ts1.enc}] (./Colton_Acosta_Electrical_Resume.aux) 
 ) 
 Here is how much of TeX's memory you used:
- 1755 strings out of 477985
- 29211 string characters out of 5840058
- 1865388 words of memory out of 5000000
+ 1753 strings out of 477985
+ 29183 string characters out of 5840059
+ 1864388 words of memory out of 5000000
  22004 multiletter control sequences out of 15000+600000
  513536 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 57i,5n,62p,285b,214s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,5n,62p,274b,165s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Colton_Acosta_Master_Resume.pdf (2 pages, 83847 bytes).
+Output written on Colton_Acosta_Electrical_Resume.pdf (1 page, 79436 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 39 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
