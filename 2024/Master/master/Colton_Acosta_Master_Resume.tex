@@ -56,23 +56,31 @@ Arizona State University, Tempe, AZ
 4.00 GPA
 
 \section{TECHNICAL SKILLS}
-\subsection{Software} 
-C, C++, C\#, Python, Assembly, Linux, Git, Make, ARM, Visual Studio 
-\subsection{Hardware}
-Microcontrollers, Soldering (SMD), Multimeters, Oscilloscopes, Verilog, FPGA, Function Generators 
 \subsection{Design/Modeling}
 Altium, LTspice, KiCAD, MATLAB/Simulink, Cadence, NX, SolidWorks 
+\subsection{Hardware}
+Microcontrollers, Soldering (SMD), Multimeters, Oscilloscopes, Verilog, FPGA, Function Generators 
+\subsection{Software} 
+C, C++, C\#, Python, Assembly, Linux, Git, Make, ARM, Visual Studio 
 \section{EXPERIENCE}
 \textbf{SpaceX: Hardware Development Engineer, Starship Electronics}
 \hfill
 \vspace{0.5em}
 October 2023--Present
 \begin{itemize}
-\item{ Responsible Engineer for a secondary IMU on Starship Booster used for body bending gyroscope compensation algorithms }
-\item{ Released a new PCB revision adding inertial sensor upgrades, power supply input filtering,  }
+\item{ Responsible Engineer for a gyroscope that provides inputs to bending compensation algorithms on Starship Booster }
+\item{ Responsible Engineer for an engineering camera used to stream video of key events in flight to inform design }
+\item{ Maintained vehicle configs such as telemetry channels and rates and pushed code to the monorepository }
+\item{ Conducted environmental testing including thermal cycling, vibration, shock, leak, humidity, and radiation}
+\item{ Developed and released PCBs and avionics designs using Altium for schematic capture and layout}
+\item{ Reduced cost per vehicle stack by more than 150k by developing new technologies for rocket usage such as MEMs gyroscopes, video encoder ASICs, and cutting edge image sensors }
+\item{ Doubled camera yield by root causing production test failures such as boot failures, loss of streams, and corrupted video packets}
+\item{ Brought up new PCB designs by testing power trees, serial interfaces, and sensors using oscilloscopes and multimeters }
+\item{ Coordinated product development by communicating with production, supply chain, and engineering }
+\item{ Wrote Python scripts to scrub vehicle data from company databases and analyze hardware performance }
 \end{itemize}
 \vspace{1em}
-\textbf{Raytheon Missiles and Defense: Software Engineer I}
+\textbf{Raytheon Missiles and Defense: Software Engineer}
 \hfill
 \vspace{0.5em}
 July 2023--October 2023
@@ -80,7 +88,7 @@ July 2023--October 2023
 \item{Implemented new features for a .NET based WebUI used for automating software (SIL), computer (CIL), and hardware (HIL) in the loop missile tests using C\# and Javascript}
 \item{Wrote a C\# method to automatically locate library dll files to eliminate the need for manually setting the path}
 \item{Added a new page to the WebUI for monitoring background test status by querying the API using HTTP requests}
-\item{Added Javascript keyboard event listeners to results pages to implement quit and save keyboard shortcuts}
+\item{Added Javascript keyboard event listeners user interface to implement quit and save keyboard shortcuts}
 \end{itemize}
 \vspace{1em}
 \textbf{Undergraduate Research Assistant: Advanced CMOS}
@@ -143,9 +151,9 @@ May 2021--August 2021
 January 2021--Present
 \begin{itemize}
 \item{Developed a flight computer to log flight data and implement parachute recovery in amateur and high power rockets}
-\item{Equipped the computer with an ARM Cortex-M4 microcontroller, a barometric pressure sensor, external flash, and a USB interface}
+\item{Equipped the computer with an ARM Cortex-M7 microcontroller, a barometric pressure sensor, external flash, and a USB interface}
 \item{Created three PCB layouts to separately optimize for cost, size, and test by using different design rules (DRC) }
-\item{Wrote APIs in C for low level control of external hardware using UART, I2C, SPI, and GPIO}
+\item{Wrote hardware drivers in C to abstract low level control of hardware UART, I2C, SPI, and GPIO interfacing}
 \item{Wrote a data-logger application to collect flight data, and successfully recovered flight data from several launches}
 \item{Implemented the recovery software using a state machine architecture to transition between programming, idle, in-flight, and post-flight states}
 \item{Implemented apogee detection, main parachute altitude detection, and landing detection algorithms using a FIFO buffer, Z-transforms, and tuned thresholds}
@@ -164,7 +172,7 @@ August 2019--May 2023
 \item{Programmed a Python interface for real-time visualization of engine state and sensor measurements}
 \item{Amplified pressure transducer differential outputs to measurable ranges using a programmable amplifier circuit in order to save upwards of 10\% of club funding in new sensor costs}
 \item{Wrote sequencing code in C to open/close engine values in a timed order to automate a static hotfire test }
-\item{Wrote an interrupt driven command processor to communicate with the remote ground station over ethernet}
+\item{Wrote an interrupt driven command processor to communicate with the remote ground station over RS485}
 \end{itemize}
 \vspace{1em}
 \textbf{Sun Devil Rocketry: Valve Controller}
