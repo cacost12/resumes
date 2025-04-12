@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=.5in]{geometry}
+\usepackage{enumitem}
+
+\setlist{nosep}
+
+\titleformat{\section}
+{\bfseries\normalsize}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[:]
+
+\titleformat{\subsubsection}[runin]
+{}
+{$\bullet$}
+{0em}
+{}
+
+\titlespacing{\subsection}
+{0em}{0em}{1em}
+
+\titlespacing{\subsubsection}
+{3em}{0em}{1em}
+
+\renewcommand{\maketitle}{
+	\begin{center}
+		{\huge\bfseries
+			\theauthor}
+			
+		404.430.1346 $\bullet$ cacost12@asu.edu $\bullet$ US Citizen $\bullet$ coltonacosta.com $\bullet$ linkedin.com/in/colton-acosta/
+	\end{center}
+}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\begin{document}
+
+\title{Resume}
+\author{Colton Acosta}
+\maketitle
+\section{EDUCATION}
+\textbf{B.S.E, Electrical Engineering}
+\hfill 
+May 2023
+\linebreak
+Arizona State University, Tempe, AZ 
+\hfill
+4.00 GPA
+
+\section{TECHNICAL SKILLS}
+\subsection{Design/Modeling}
+Altium, LTspice, KiCAD, MATLAB/Simulink, Cadence, NX, SolidWorks 
+\subsection{Hardware}
+Microcontrollers, Soldering (SMD), Multimeters, Oscilloscopes, Verilog, FPGA, Function Generators 
+\subsection{Software} 
+C, C++, C\#, Python, Assembly, Linux, Git, Make, ARM, Visual Studio 
+\section{EXPERIENCE}
+\textbf{SpaceX: Hardware Development Engineer, Starship Electronics}
+\hfill
+\vspace{0.5em}
+October 2023--Present
+\begin{itemize}
+\item{ Responsible Engineer for a gyroscope that provides inputs to bending compensation algorithms on Starship Booster }
+\item{ Responsible Engineer for an engineering camera used to stream video of key events in flight to inform design }
+\item{ Conducted environmental testing including thermal cycling, vibration, shock, leak, humidity, and radiation }
+\item{ Developed and released PCBs and avionics designs using Altium for schematic capture and layout}
+\item{ Reduced cost per vehicle stack by more than 150k by developing new technologies for rocket usage such as MEMs gyroscopes, video encoder ASICs, and cutting edge image sensors }
+\item{ Doubled camera yield by root causing production test failures such as boot failures, loss of streams, and corrupted video packets}
+\item{ Brought up new PCB designs by testing power trees, serial interfaces, and sensors using oscilloscopes and multimeters }
+\item{ Coordinated product development by communicating with production, supply chain, and engineering }
+\end{itemize}
+\vspace{1em}
+\textbf{Raytheon Missiles and Defense: Software Engineer}
+\hfill
+\vspace{0.5em}
+July 2023--October 2023
+\begin{itemize}
+\item{Implemented new features for a .NET based WebUI used for automating software (SIL), computer (CIL), and hardware (HIL) in the loop missile tests using C\# and Javascript}
+\item{Wrote a C\# method to automatically locate library dll files to eliminate the need for manually setting the path}
+\item{Added a new page to the WebUI for monitoring background test status by querying the API using HTTP requests}
+\item{Added Javascript keyboard event listeners user interface to implement quit and save keyboard shortcuts}
+\end{itemize}
+\vspace{1em}
+\textbf{Garmin Aviation: Embedded Software Engineering Intern}
+\hfill
+\vspace{0.5em}
+May 2022--August 2022
+\begin{itemize}
+\item{Developed certification software for a new Vulkan graphics driver to be used in safety-critical avionics systems}
+\item{Wrote unit tests with randomized test vectors in C to test the GPU driver source code with maximal coverage}
+\item{Resolved runtime errors caused by randomized test vectors by analyzing the source code functions and manually setting up data structures, pointers, arrays, and buffers}
+\end{itemize}
+\vspace{1em}
+\textbf{Sun Devil Rocketry: President and Avionics Team Founder}
+\hfill
+\vspace{0.5em}
+August 2021--May 2022
+\begin{itemize}
+\item{Oversaw all activities of a technical student organization with three rocket propulsion teams, two amateur rocketry teams, a K-12 outreach program, and over 50 members   }
+\item{Facilitated all project development by holding meetings and design reviews, writing budget proposals, organizing launch logistics, mentoring, and maintaining industry/university relations}
+\item{Founded a new avionics team to design the club's first flight computer and promote the development of electrical and software engineering skills among students interested in the aerospace industry}
+\vspace{1em}
+\end{itemize}
+\textbf{Pyramid Technologies, Inc, Mesa, AZ: Electrical Engineering Intern}
+\hfill 
+\vspace{0.5em}
+May 2021--August 2021
+\begin{itemize}
+\item{Revised a switching power supply and serial opto-isolator PCB to be usable with multiple bill acceptors}
+\item{Designed a new PCB to protect test fixture pins from overvoltage and overcurrent conditions
+	using schottky diodes and a PTC resettable fuse}
+\item{Added serial indication LEDs, signal buffering, inrush current protection, and short circuit protection to a USB to MDB serial interface PCB}
+\item{Designed a revised bill acceptor software development board by adding an electronic fuse to alleviate faulty sup-
+	ply/loading conditions and provide power supply fault indication}
+\item{Performed DC load testing on a new 120V AC power supply to measure power trace voltage drops at full load}
+\end{itemize}
+\vspace{0.5em}
+\thispagestyle{empty}
+\end{document}
